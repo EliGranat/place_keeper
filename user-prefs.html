@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user-prefs.html</title>
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+    <h1>user-prefs.html</h1>
+    <form>
+        <label for="name">Please enter your name:</label>
+        <input type="text" name="username" id="username">
+        <br>
+        <label for="date">Date of Birth:</label>
+        <input type="date" name="date" id="date">
+        <br>
+        <label for="color"> Choose your favorite color for bgc: </label>
+        <input type="color" name="color" id="color" value="#ff0000">
+        <br>
+        <label for="color"> Choose your favorite color for txt: </label>
+        <input type="color" name="color2" id="color" value="#ff0000">
+        <br>
+        <label for="email">Enter Your Mail:</label>
+        <input type="email" name="email" id="email" placeholder="example@mail">
+        <br>
+        <label for="age"></label>
+        <div>
+            <input type="range" name="age" id="age" min="18" max="120" value="22" onchange="onShowAge(this.value)">
+            <span class="sAge">26</span>
+        </div>
+        <br>
+        <button class="Register" onclick="onRegister(event)">Register</button>
+    </form>
+
+    <script src="./js/utilService.js">
+    </script>
+    <script src="./js/storageService.js">
+    </script>
+    <script src="./js/userPrefService.js">
+    </script>
+    <script src="./js/placeService.js">
+    </script>
+    <script src="./js/controler.js">
+    </script>
+</body>
+
+</html>
