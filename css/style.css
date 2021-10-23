@@ -5,12 +5,16 @@
 
 body {
     background-color: antiquewhite;
-    /* font-family: fantasy; */
 }
 
 h1 {
     margin-top: 5%;
+    margin-bottom: 50px;
     text-align: center;
+}
+
+.container-welcom button {
+    margin: 0 25%;
 }
 
 form {

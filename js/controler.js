@@ -27,6 +27,7 @@ function onRegister(ev) {
     createUser(input[0], input[1], input[2], input[3], input[4])
 }
 
+
 function ceangeColor(colorBgc, colorTxt) {
     const elBgcUser = document.querySelector('body')
     elBgcUser.style.backgroundColor = colorBgc

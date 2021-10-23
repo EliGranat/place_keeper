@@ -1,29 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>map.html</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <title>Simple Map</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link rel="stylesheet" type="text/css" href="./css/map.css" />
+
 </head>
 
-<body>
-    <h1>map.html</h1>
+<body onload="initMap()">
+    <div id="map">
+    </div>
+    <div class="my-location " onclick="onMyLocation() ">
+        <img src="./img/btn-loc.jpg " alt="btn ">
+    </div>
 
+    <script src="./js/storageService.js ">
+    </script>
 
-
-    <script src="./js/utilService.js">
+    <script src="./js/placeService.js ">
     </script>
-    <script src="./js/storageService.js">
-    </script>
-    <script src="./js/userPrefService.js">
-    </script>
-    <script src="./js/placeService.js">
-    </script>
-    <script src="./js/controler.js">
-    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBs7t_yPGVD1cd2HsAoLMiOZjC_l9vbPlA&callback=initMap "></script>
 </body>
 
 </html>

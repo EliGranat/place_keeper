@@ -2,14 +2,15 @@
 var gUser;
 const userStorageName = 'user'
 
-function createUser(username, date, color, colorTxt, email, age) {
+function createUser(username, date, color, colorTxt, email, age, locations = []) {
     gUser = {
         username,
         date,
         color,
         colorTxt,
         email,
-        age
+        age,
+
     }
     saveToStorage(userStorageName, gUser)
     loadDifaultUser()
